@@ -2,9 +2,11 @@ const { response } = require('express');
 const express = require('express');
 const Datastore = require('nedb');
 const app = express();
+const port = process.env.PORT || 3000;
 
-app.listen(3000, function () {
-    console.log('Server is running at 3000.')
+
+app.listen(port, function () {
+    console.log(`Server running at ${port}`)
 });
 
 app.use(express.static('frontend'));
