@@ -151,3 +151,114 @@ input {
     justify-self: center;
     align-self: center;
 }
+
+@media (max-width: 500px){
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        color: #f07167;
+        text-align: center;
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1em;
+        overflow: visible;
+    }
+    
+    .form {
+        width: 30%;
+        font-family: Poppins, sans-serif;
+        font-weight: 500;
+        color: #e63946;
+        position: sticky;
+        top: 1em;
+        align-self: flex-start;
+        font-size: 0.6em;
+        
+    }
+    
+    input {
+        color: #f07167 !important;
+    }
+    
+    .output {
+        width: 50%;
+        background-color: #fdfcdc;
+        padding: 1em;
+    }
+    
+    .loading:not([hidden]) {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        margin: 5% 20%;
+             
+      }
+      
+    .loading::after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 2px solid #f3f3f3;
+        border-top: 3px solid #f25a41;
+        border-radius: 100%;
+        will-change: transform;
+        animation: spin 1s infinite linear
+      }
+    
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    
+    .imgCarro, .marcaModelo, .ano, .placa, .cor {
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        font-size: 0.6em;
+        color: #e63946;
+        margin-left: 0.2em;
+        
+    }
+    
+    .imgCarro img {
+        width: 150px;
+    }
+    
+    .imgCarroOutput, .marcaModeloOutput, .anoOutput, .placaOutput, .corOutput {
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
+        font-size: 0.5em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        color: #0081a7;
+        
+    }
+    
+    #cadastrar, #limpar {
+        margin-top: 1em;
+        font-size: 0.5em;
+    }
+    
+    #excluir {
+        margin-left: 0.2em;
+        font-family: Poppins, sans-serif;
+        color: #0081a7;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        font-size: 0.5em;
+    }
+
+}
