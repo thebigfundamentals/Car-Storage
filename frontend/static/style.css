@@ -115,7 +115,7 @@ input {
 	}
   }
 
-.imgCarro, .marcaModelo, .ano, .placa, .cor {
+.carImage, .brandModel, .year, .plate, .color {
     font-family: Poppins, sans-serif;
     font-weight: 700;
     font-size: 1.1em;
@@ -124,11 +124,11 @@ input {
     
 }
 
-.imgCarro img {
+.carImage img {
     width: 350px;
 }
 
-.imgCarroOutput, .marcaModeloOutput, .anoOutput, .placaOutput, .corOutput {
+.carImageOutput, .brandModelOutput, .yearOutput, .plateOutput, .colorOutput {
     font-family: Poppins, sans-serif;
     font-weight: 300;
     font-size: 1em;
@@ -139,11 +139,11 @@ input {
     
 }
 
-#cadastrar, #limpar {
+#register, #clear {
     margin-top: 1em;
 }
 
-#excluir {
+#delete {
     margin-left: 0.2em;
     font-family: Poppins, sans-serif;
     color: #0081a7;
@@ -223,7 +223,7 @@ input {
         }
       }
     
-    .imgCarro, .marcaModelo, .ano, .placa, .cor {
+    .carImage, .brandModel, .year, .plate, .color {
         font-family: Poppins, sans-serif;
         font-weight: 700;
         font-size: 0.6em;
@@ -232,11 +232,11 @@ input {
         
     }
     
-    .imgCarro img {
+    .carImage img {
         width: 150px;
     }
     
-    .imgCarroOutput, .marcaModeloOutput, .anoOutput, .placaOutput, .corOutput {
+    .carImageOutput, .brandModelOutput, .yearOutput, .plateOutput, .colorOutput {
         font-family: Poppins, sans-serif;
         font-weight: 300;
         font-size: 0.5em;
@@ -247,12 +247,12 @@ input {
         
     }
     
-    #cadastrar, #limpar {
+    #register, #clear {
         margin-top: 1em;
         font-size: 0.5em;
     }
     
-    #excluir {
+    #delete {
         margin-left: 0.2em;
         font-family: Poppins, sans-serif;
         color: #0081a7;

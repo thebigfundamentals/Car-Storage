@@ -24,13 +24,13 @@
     visibility: visible;
 }
 
-.toastNotification--failure {
+.toastNotification--excluded {
     background: #f07167;
     color: #fdfcdc;
 
 }
 
-.toastNotification--success {
+.toastNotification--added {
     background: #00afb9;
     color: #fdfcdc;
 }
