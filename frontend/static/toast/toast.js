@@ -19,7 +19,7 @@ const Toast = {
 
         this.hideTimeout = setTimeout(() => {
             this.el.classList.remove('toastNotification--visible')
-        }, 1500);
+        }, 2000);
     }
 };
 
