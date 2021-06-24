@@ -141,11 +141,13 @@ const callbacks = {
                 },
                 body: JSON.stringify(idToRemove)
             };
-
-            const response = await fetch('/removeApi', options);
-            const data = await response.json();
-            console.log(data)
-
+            try {
+                const response = await fetch('/removeApi', options);
+                const data = await response.json();
+                console.log(data)
+            } catch (e) {
+                console.log(e)
+            }
         }
 
         Toast.show('Carro excluído com sucesso.', 'excluded');
@@ -169,10 +171,13 @@ const callbacks = {
 };
 
 async function loadDatabase() {
-    const response = await fetch('/api');
-    const data = await response.json();
-    return data
-
+    try {
+        const response = await fetch('/api');
+        const data = await response.json();
+        return data
+    } catch (e) {
+        console.log(e)
+    }
 };
 
 const loadDatabaseResult = () => {
