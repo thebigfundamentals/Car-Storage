@@ -111,7 +111,7 @@ const callbacks = {
 
     async deleteCar() {
 
-        let confirmar = confirm('Você tem certeza de que deseja delete este veículo? Esta ação não poderá ser desfeita.');
+        let confirmar = confirm('Você tem certeza de que deseja deletar este veículo? Esta ação não poderá ser desfeita.');
 
         if (!confirmar) {
             return
