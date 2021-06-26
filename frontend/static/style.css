@@ -48,6 +48,17 @@ table {
 	border-spacing: 0;
 }
 
+.logout a {
+    text-decoration: none;
+    font-size: 1em;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    color: #f07167;
+    text-align: left;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
 header {
     display: flex;
     justify-content: center;

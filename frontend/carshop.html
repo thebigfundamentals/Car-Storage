@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/toast/toast.css">
+    <script src="static/index.js" defer type="module"></script>
+    <script src="static/toast/toast.js" defer type="module"></script>
+    <title>Cadastro de Veículos</title>
+</head>
+
+<body>
+    <p class="logout"><a href="/logout">Logout</a></p>
+    <header>
+        <h1>The Big Fundamentals Car Shop</h1>
+    </header>
+    <div class="content">
+        <div class="form">
+            <form>
+                <label for="carImage" class="form-label">Imagem do carro (URL)</label>
+                <input type="url" class="form-control form-control-sm" id="carImage" aria-describedby="carImage">
+                <label for="brandModel" class="form-label">Marca / Modelo</label>
+                <input type="text" class="form-control form-control-sm" id="brandModel" aria-describedby="brandModel">
+                <label for="year" class="form-label">Ano</label>
+                <input type="number" class="form-control" id="year" aria-describedby="year">
+                <label for="plate" class="form-label">Placa</label>
+                <input type="text" class="form-control form-control-sm" id="plate" aria-describedby="plate">
+                <label for="color" class="form-label">Cor</label>
+                <input type="text" class="form-control form-control-sm" id="color" aria-describedby="color">
+                <button type="button" class="btn btn-danger" id="register">Cadastrar</button>
+                <button type="button" class="btn btn-danger" id="clear">Limpar</button>
+        </div>
+        </form>
+
+        <div class="output">
+            <span class="loading"></span>
+            <div class="car">
+                <div class="carImage">Imagem do carro
+                    <div class="carImageOutput">
+                    </div>
+                </div>
+                <div class="brandModel">Marca / Modelo
+                    <div class="brandModelOutput"></div>
+                </div>
+                <div class="year">Ano
+                    <div class="yearOutput"></div>
+                </div>
+                <div class="plate">Placa
+                    <div class="plateOutput"></div>
+                </div>
+                <div class="color">Cor
+                    <div class="colorOutput"></div>
+                </div>
+                <div class="delete"><button type="button" class="btn btn-outline-danger btn-sm" id="delete"
+                        hidden>Excluir</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

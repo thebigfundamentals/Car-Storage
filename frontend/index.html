@@ -11,61 +11,28 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/styleLogin.css">
     <link rel="stylesheet" href="static/toast/toast.css">
-    <script src="static/index.js" defer type="module"></script>
+    <script src="static/login.js" defer type="module"></script>
     <script src="static/toast/toast.js" defer type="module"></script>
-    <title>Cadastro de Veículos</title>
+    <title>Login - The Big Fundamentals</title>
 </head>
+<header>The Big Fundamentals Car Shop</header>
+<form action="/login" method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="username" name="username">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" value="login" class="btn btn-danger">Entrar</button>
+    <label id="error-message"></label>
+</form>
 
 <body>
-    <header>
-        <h1>Concessionária The Big Fundamentals</h1>
-    </header>
-    <div class="content">
-        <div class="form">
-            <form>
-                <label for="carImage" class="form-label">Imagem do carro (URL)</label>
-                <input type="url" class="form-control form-control-sm" id="carImage" aria-describedby="carImage">
-                <label for="brandModel" class="form-label">Marca / Modelo</label>
-                <input type="text" class="form-control form-control-sm" id="brandModel" aria-describedby="brandModel">
-                <label for="year" class="form-label">Ano</label>
-                <input type="number" class="form-control" id="year" aria-describedby="year">
-                <label for="plate" class="form-label">Placa</label>
-                <input type="text" class="form-control form-control-sm" id="plate" aria-describedby="plate">
-                <label for="color" class="form-label">Cor</label>
-                <input type="text" class="form-control form-control-sm" id="color" aria-describedby="color">
-                <button type="button" class="btn btn-danger" id="register">Cadastrar</button>
-                <button type="button" class="btn btn-danger" id="clear">Limpar</button>
-        </div>
-        </form>
 
-        <div class="output">
-            <span class="loading"></span>
-            <div class="car">
-                <div class="carImage">Imagem do carro
-                    <div class="carImageOutput">
-                    </div>
-                </div>
-                <div class="brandModel">Marca / Modelo
-                    <div class="brandModelOutput"></div>
-                </div>
-                <div class="year">Ano
-                    <div class="yearOutput"></div>
-                </div>
-                <div class="plate">Placa
-                    <div class="plateOutput"></div>
-                </div>
-                <div class="color">Cor
-                    <div class="colorOutput"></div>
-                </div>
-                <div class="delete"><button type="button" class="btn btn-outline-danger btn-sm" id="delete"
-                        hidden>Excluir</button>
-                </div>
-                <hr>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
