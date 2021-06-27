@@ -4,21 +4,24 @@ const Toast = {
 
         this.el = document.createElement('div');
         this.el.className = 'toastNotification';
+        this.el.id = 'toast';
         document.body.appendChild(this.el);
     },
 
     show(message, state) {
         clearTimeout(this.hideTimeout);
 
-        this.el.textContent = message;
-        this.el.className = 'toastNotification toastNotification--visible';
+        const $toast = document.querySelector('#toast');
+
+        $toast.textContent = message;
+        $toast.className = 'toastNotification toastNotification--visible';
 
         if (state) {
-            this.el.classList.add(`toastNotification--${state}`);
+            $toast.classList.add(`toastNotification--${state}`);
         }
 
         this.hideTimeout = setTimeout(() => {
-            this.el.classList.remove('toastNotification--visible')
+            $toast.classList.remove('toastNotification--visible')
         }, 2000);
     }
 };
